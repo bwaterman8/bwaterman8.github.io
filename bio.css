@@ -1,105 +1,35 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
 
 body {
         background-image: url(ocean2.jpg);
         background-size: cover;
-        display: grid;
-        grid-template-columns: 32% 1fr 35%;
-        grid-template-rows: 20% 5% 5% 5% 10% 1fr 1fr;
 }
 
 .top_title {
-        display: grid;
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
+        display: flex;
+        justify-content: center;
+        margin: 3em;
+        margin-bottom: 0;
+        font-family: 'Lemon', cursive;
 }
 h1 {
-        margin: 0px;
-        font-style: oblique;
         font-size: 60px;
 } 
 .middle_title {
-        display: grid;
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+        font-family: 'Lemon', cursive;
+
 }
 h3 {    
-        font-style: oblique;
         font-size: 30px;
-        display: grid;
-        grid-column: 2;
-        grid-row: 2;
 }
-.left_side {
-        display: grid;
-        grid-column: 1;
-}
-.middle {
-        display: grid;
-        grid-column: 2;
-        grid-row: 5;
-        grid-template-columns: 1fr 1fr 1fr;
-}    
 
-.right_side {
-        display: grid;
-        grid-column: 3;
-}
-.bio {
-        margin: 0px;
-        padding: 0px;
-        display: grid;
-        grid-column: 1;
-        grid-row: 3;
-}
-.bio_title {
-        margin: 0px;
-        padding: 0px;
-        display: grid;
-        grid-row: 3;
-}
-.bio_piece1 {
-        margin: 0px;
-        padding: 0px;
-        display: grid;
-        grid-row: 3;
-}
-.bio_piece2 {
-        margin: 0px;
-        padding: 0px;
-        display: grid;
-        grid-row: 4;
-}
-.bio_piece3 {
-        margin: 0px;
-        padding: 0px;
-        display: grid;
-        grid-row: 5;
-}
-.portfolio {
-        margin: 0px;
-        padding: 0px;
-        display: grid;
-        grid-column: 1;
-        grid-row: 7;
-}
-.middle-button {
-        font: bold 11px Arial;
-        text-decoration: none;
-        background-color: black;
-        color: white;
-        padding: 0px;
-        border-top: 1px solid #CCCCCC;
-        border-right: 1px solid #333333;
-        border-bottom: 1px solid #333333;
-        border-left: 1px solid #CCCCCC;
-        display: grid;
-        grid-column: 1;
-        grid-row: 7;
-        position: relative;
-}       
 .icons ul {
-        margin: 0px;
-        padding: 0px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -119,19 +49,78 @@ h3 {
         color: rgb(255, 255, 255);
 }
 .icons ul li .fa:hover {
-        color: rgb(35, 223, 223);
+        color: rgb(0, 0, 0);
+}
+.icons ul li .modal_open {
+        font-size: 30px;
+        line-height: 60px;
+        transition: .6s;
+        color: rgb(255, 255, 255);
+}
+.icons ul li .modal_open:hover {
+        color: rgb(0, 0, 0);
 }
 .icons ul li a {
-        /* position: relative; */
+        position: relative;
         display: block;
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        background-color: rgb(0, 87, 114);
+        background-color: rgb(29, 197, 161);
         text-align: center;
         transition: .6s;
         box-shadow: 0 5px 4px rgba(0 0 0 .5);
 }
 .icons ul li a:hover {
         transform: translate(0, -10px);
+}
+a:link,
+a:visited {
+        text-decoration: none;
+}
+.modal {
+        background-color: rgba(1, 140, 165, 0.363);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+}
+.modal_content {
+        width: 40%;
+        height: 35%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2em;
+        border-radius: 2em;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+}
+#modal:target {
+        opacity: 1;
+        visibility: visible;
+}
+#modal:target .modal_content {
+        opacity: 1;
+        visibility: visible;
+}       
+.modal_ex {
+        color: black;
+        font-size: 1.5em;
+        font-weight: bold;
+        position: absolute;
+        top: .5em;
+        right: 1em;
+}
+.modal_head {
+        color: black;
+        margin-bottom: .5em;
 }
