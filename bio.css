@@ -28,7 +28,11 @@ h1 {
 h3 {    
         font-size: 30px;
 }
-
+img {
+        width: 40%;
+        height: 40%;
+        border-radius: 50%;
+}
 .icons ul {
         position: absolute;
         top: 50%;
