@@ -1,264 +1,314 @@
 * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-        background-image: url(ocean2.jpg);
-        background-size: cover;
+    background-image: url(ocean2.jpg);
+    background-size: cover;
 }
 
 .top_title {
-        display: flex;
-        justify-content: center;
-        margin: 1em;
-        margin-bottom: 0;
-        font-family: 'Lemon', cursive;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    margin-bottom: 0;
+    font-family: 'Lemon', cursive;
 }
+
 h1 {
-        font-size: 60px;
-} 
+    font-size: 60px;
+}
+
 .middle_title {
-        display: flex;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
 
 }
-h3 {    
-        font-size: 20px;
-        font-family: 'Lemon', cursive;
+
+h3 {
+    font-size: 20px;
+    font-family: 'Lemon', cursive;
 }
-.bottom_title{
-        display: flex;
-        justify-content: center;
-        font-weight: bold;
-        text-decoration: underline;
-        margin-top: .5em;
-        font-size: 30px;
+
+.bottom_title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: .5em;
+    font-size: 30px;
 }
+
 img {
-        position: relative;
-        display: flex;
-        justify-content: left;
-        width: 30%;
-        height: 30%;
-        border-radius: 50%;
-        margin-left: 2em;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    margin-left: 2em;
 }
+
 .icons ul {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
 }
+
 .icons ul li {
-        list-style: none;
-        margin: 0 10px;
+    list-style: none;
+    margin: 0 10px;
 }
+
 .icons ul li .project1 {
-        font-size: 20px;
-        line-height: 60px;
-        transition: .6s;
-        color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 60px;
+    transition: .6s;
+    color: rgb(255, 255, 255);
 }
+
 .icons ul li .project1:hover {
-        color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
+
 .icons ul li .project2 {
-        font-size: 20px;
-        line-height: 60px;
-        transition: .6s;
-        color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 60px;
+    transition: .6s;
+    color: rgb(255, 255, 255);
 }
+
 .icons ul li .project2:hover {
-        color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
+
 .icons ul li .project3 {
-        font-size: 20px;
-        line-height: 60px;
-        transition: .6s;
-        color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 60px;
+    transition: .6s;
+    color: rgb(255, 255, 255);
 }
+
 .icons ul li .project3:hover {
-        color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
+
 .icons ul li .fa {
-        font-size: 30px;
-        line-height: 60px;
-        transition: .6s;
-        color: rgb(255, 255, 255);
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: rgb(255, 255, 255);
 }
+
 .icons ul li .fa:hover {
-        color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
+
 .icons ul li .modal_open {
-        font-size: 30px;
-        line-height: 60px;
-        transition: .6s;
-        color: rgb(255, 255, 255);
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: rgb(255, 255, 255);
 }
+
 .icons ul li .modal_open:hover {
-        color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
+
 .icons ul li a {
-        position: relative;
-        display: block;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: rgb(29, 197, 161);
-        text-align: center;
-        transition: .6s;
-        box-shadow: 0 5px 4px rgba(0 0 0 .5);
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(29, 197, 161);
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0 0 0 .5);
 }
+
 .icons ul li a:hover {
-        transform: translate(0, -10px);
+    transform: translate(0, -10px);
 }
+
 a:link,
 a:visited {
-        text-decoration: none;
+    text-decoration: none;
 }
+
 .modal {
-        background-color: rgba(39, 84, 92, 0.603);
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        opacity: 0;
-        visibility: hidden;
-        transition: all .3s;
+    background-color: rgba(39, 84, 92, 0.603);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
 }
+
 .modal_content {
-        width: 40%;
-        height: 35%;
-        background-color: #ffffff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 2em;
-        border-radius: 2em;
-        opacity: 0;
-        visibility: hidden;
-        transition: all .3s;
+    width: 40%;
+    height: 35%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
 }
+
 #modal:target {
-        opacity: 1;
-        visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
+
 #modal:target .modal_content {
-        opacity: 1;
-        visibility: visible;
-}       
+    opacity: 1;
+    visibility: visible;
+}
+
 .modal_ex {
-        color: black;
-        font-size: 1.5em;
-        font-weight: bold;
-        position: absolute;
-        top: .5em;
-        right: 1em;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    top: .5em;
+    right: 1em;
 }
+
 .modal_head {
-        color: black;
-        margin-bottom: .5em;
+    color: black;
+    margin-bottom: .5em;
 }
-.modal_two_content{
-        width: 40%;
-        height: 50%;
-        background-color: #ffffff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 2em;
-        border-radius: 2em;
-        opacity: 0;
-        visibility: hidden;
-        transition: all .3s;
+
+.modal_two_content {
+    width: 40%;
+    height: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
 }
+
 #modalTwo:target {
-        opacity: 1;
-        visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
+
 #modalTwo:target .modal_two_content {
-        opacity: 1;
-        visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
+
 .modal_two_head {
-        color: black;
-        margin-bottom: .5em;
+    color: black;
+    margin-bottom: .5em;
 }
+
 .modal_two_pic {
-        position: absolute;
-        border-radius: unset;
-        margin: 0;
-        top: 40%;
-        left: 15%;
-        width: 70%;
-        height: 50%;
+    position: absolute;
+    border-radius: unset;
+    margin: 0;
+    top: 45%;
+    left: 15%;
+    width: 70%;
+    height: 50%;
 }
-.modal_three_content{
-        width: 40%;
-        height: 50%;
-        background-color: #ffffff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 2em;
-        border-radius: 2em;
-        opacity: 0;
-        visibility: hidden;
-        transition: all .3s;
+
+.modal_three_content {
+    width: 40%;
+    height: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
 }
+
 #modalThree:target {
-        opacity: 1;
-        visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
+
 #modalThree:target .modal_three_content {
-        opacity: 1;
-        visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
+
 .modal_three_head {
-        color: black;
-        margin-bottom: .5em;
+    color: black;
+    margin-bottom: .5em;
 }
+
 .modal_three_pic {
-        position: absolute;
-        border-radius: unset;
-        margin: 0;
-        top: 40%;
-        left: 15%;
-        width: 70%;
-        height: 50%;
+    position: absolute;
+    border-radius: unset;
+    margin: 0;
+    top: 40%;
+    left: 15%;
+    width: 70%;
+    height: 50%;
 }
-.modal_four_content{
-        width: 40%;
-        height: 50%;
-        background-color: #ffffff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 2em;
-        border-radius: 2em;
-        opacity: 0;
-        visibility: hidden;
-        transition: all .3s;
+
+.modal_four_content {
+    width: 40%;
+    height: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
 }
+
 #modalFour:target {
-        opacity: 1;
-        visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
+
 #modalFour:target .modal_four_content {
-        opacity: 1;
-        visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
+
 .modal_four_head {
-        color: black;
-        margin-bottom: .5em;
+    color: black;
+    margin-bottom: .5em;
+}
+
+.modal_four_pic {
+    position: absolute;
+    border-radius: unset;
+    margin: 0;
+    top: 45%;
+    left: 15%;
+    width: 70%;
+    height: 50%;
 }
