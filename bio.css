@@ -55,7 +55,7 @@ img {
 }
 .icons ul li {
         list-style: none;
-        margin: 0 15px;
+        margin: 0 10px;
 }
 .icons ul li .project1 {
         font-size: 20px;
@@ -73,6 +73,15 @@ img {
         color: rgb(255, 255, 255);
 }
 .icons ul li .project2:hover {
+        color: rgb(0, 0, 0);
+}
+.icons ul li .project3 {
+        font-size: 20px;
+        line-height: 60px;
+        transition: .6s;
+        color: rgb(255, 255, 255);
+}
+.icons ul li .project3:hover {
         color: rgb(0, 0, 0);
 }
 .icons ul li .fa {
@@ -154,6 +163,102 @@ a:visited {
         right: 1em;
 }
 .modal_head {
+        color: black;
+        margin-bottom: .5em;
+}
+.modal_two_content{
+        width: 40%;
+        height: 50%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2em;
+        border-radius: 2em;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+}
+#modalTwo:target {
+        opacity: 1;
+        visibility: visible;
+}
+#modalTwo:target .modal_two_content {
+        opacity: 1;
+        visibility: visible;
+}
+.modal_two_head {
+        color: black;
+        margin-bottom: .5em;
+}
+.modal_two_pic {
+        position: absolute;
+        border-radius: unset;
+        margin: 0;
+        top: 40%;
+        left: 15%;
+        width: 70%;
+        height: 50%;
+}
+.modal_three_content{
+        width: 40%;
+        height: 50%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2em;
+        border-radius: 2em;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+}
+#modalThree:target {
+        opacity: 1;
+        visibility: visible;
+}
+#modalThree:target .modal_three_content {
+        opacity: 1;
+        visibility: visible;
+}
+.modal_three_head {
+        color: black;
+        margin-bottom: .5em;
+}
+.modal_three_pic {
+        position: absolute;
+        border-radius: unset;
+        margin: 0;
+        top: 40%;
+        left: 15%;
+        width: 70%;
+        height: 50%;
+}
+.modal_four_content{
+        width: 40%;
+        height: 50%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2em;
+        border-radius: 2em;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+}
+#modalFour:target {
+        opacity: 1;
+        visibility: visible;
+}
+#modalFour:target .modal_four_content {
+        opacity: 1;
+        visibility: visible;
+}
+.modal_four_head {
         color: black;
         margin-bottom: .5em;
 }
