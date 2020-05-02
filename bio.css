@@ -385,7 +385,7 @@ a:visited {
     visibility: visible;
 }
 
-#modalSix:target .modal_five_content {
+#modalSix:target .modal_six_content {
     opacity: 1;
     visibility: visible;
 }
