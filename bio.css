@@ -312,3 +312,33 @@ a:visited {
     width: 70%;
     height: 50%;
 }
+
+.modal_five_content {
+    width: 40%;
+    height: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+#modalFive:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modalFive:target .modal_five_content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal_five_head {
+    color: black;
+    margin-bottom: .5em;
+}
