@@ -98,6 +98,17 @@ img {
     color: rgb(0, 0, 0);
 }
 
+.icons ul li .project4 {
+    font-size: 20px;
+    line-height: 60px;
+    transition: .6s;
+    color: rgb(255, 255, 255);
+}
+
+.icons ul li .project4:hover {
+    color: rgb(0, 0, 0);
+}
+
 .icons ul li .fa {
     font-size: 30px;
     line-height: 60px;
